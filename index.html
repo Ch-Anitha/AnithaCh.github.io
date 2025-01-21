@@ -12,11 +12,12 @@
 
 <body class="bg-gray-50">
     <!-- Navbar -->
-    <nav class="bg-gray-800 text-white p-4 fixed w-full top-0 z-50">
+    <nav class="bg-blue-900 text-white p-4 fixed w-full top-0 z-50 transition-transform duration-500">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold">Anitha Chunduri</a>
             <ul class="flex space-x-6">
                 <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-500">Skills</a></li>
                 <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
                 <li><a href="#certifications" class="hover:text-yellow-500">Certifications</a></li>
                 <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
@@ -25,53 +26,119 @@
     </nav>
 
     <!-- Home Section (Landing Page) -->
-    <section id="home" class="h-screen bg-blue-900 text-white flex flex-col justify-center items-center">
+    <section id="home" class="h-screen bg-blue-900 text-white flex flex-col justify-center items-center transition-opacity duration-500 opacity-100">
         <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p class="text-xl mb-8">Explore my projects, certifications, and more!</p>
+        <p class="text-xl mb-8">Explore my projects, skills, certifications, and more!</p>
         <a href="#about" class="text-yellow-500 text-lg font-semibold hover:text-yellow-400">Scroll Down</a>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <div class="flex justify-center mb-6">
+                <img src="images/anitha.jpg" alt="Anitha Chunduri" class="w-32 h-32 rounded-full shadow-lg">
+            </div>
             <p class="text-lg text-gray-700 mb-8">I am a data-driven professional with expertise in machine learning, natural language processing, and data engineering. I build predictive models, design scalable data pipelines, and deploy solutions on cloud platforms.</p>
+            <p class="text-lg text-gray-700 mb-8"><strong>Education:</strong> MS in Information Systems (Expected May 2025) from University of Maryland, Baltimore County. B-Tech in Electronics and Communication Engineering from NIT Andhra Pradesh.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Featured Projects</h2>
-            <div class="flex flex-wrap -mx-4">
-                <!-- Project 1 -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-                    <div class="project-card p-4 bg-white rounded-lg shadow-lg">
-                        <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Intelligent Traffic System</h3>
-                        <p class="text-gray-600">Built a predictive traffic model for smarter city planning and efficient management of resources.</p>
-                        <button class="view-details text-yellow-500 hover:underline" data-modal="project1">View Details</button>
-                    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="skill-card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Programming Languages & Tools</h3>
+                    <p class="text-gray-600">Languages: Python, R, HTML, CSS, JavaScript</p>
+                    <p class="text-gray-600">Development Tools: AWS, Microsoft Azure, Google Cloud Platform, Git, GitHub, Jupyter Notebook, Google Collab, Anaconda</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-                    <div class="project-card p-4 bg-white rounded-lg shadow-lg">
-                        <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Twitter Entity Recognition</h3>
-                        <p class="text-gray-600">Developed a named entity recognition system to identify key entities in Twitter data.</p>
-                        <button class="view-details text-yellow-500 hover:underline" data-modal="project2">View Details</button>
-                    </div>
+                <div class="skill-card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Data Management & Databases</h3>
+                    <p class="text-gray-600">Databases: SQL, MySQL, PostgreSQL, PL/SQL, PySpark SQL</p>
+                    <p class="text-gray-600">Data Analysis Tools: Tableau, Microsoft PowerBI, Microsoft Excel</p>
+                    <p class="text-gray-600">Big Data Technologies: Hadoop, Spark, Hive</p>
+                </div>
+                <div class="skill-card bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Machine Learning & Deep Learning</h3>
+                    <p class="text-gray-600">ML Algorithms: Classification, Clustering, Regression, Random Forest, Gradient Boosting, XGBoost</p>
+                    <p class="text-gray-600">DL Algorithms: CNN, RNN, LSTM, BERT, Transformers</p>
+                    <p class="text-gray-600">Statistical Analysis: Hypothesis Testing, A/B Testing, ANOVA, Predictive Analytics</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Featured Projects</h2>
+        <div class="flex flex-wrap -mx-4">
+            <!-- Intelligent Traffic System -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Intelligent Traffic System</h3>
+                    <p class="text-gray-600">Built a predictive traffic model for smarter city planning and efficient management of resources, using machine learning to predict traffic patterns.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+            <!-- Twitter Entity Recognition -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Twitter Entity Recognition</h3>
+                    <p class="text-gray-600">Developed a named entity recognition system to identify key entities in Twitter data using NLP techniques, leveraging libraries like NLTK and spaCy.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+            <!-- Netflix Review Sentiment Analysis -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Netflix Review Sentiment Analysis</h3>
+                    <p class="text-gray-600">Built a sentiment analysis model to classify Netflix user reviews into positive, negative, and neutral categories, providing insights into user feedback.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+            <!-- Large Language Model Hallucination Detection -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project4.jpg" alt="Project 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">LLM Hallucination Detection</h3>
+                    <p class="text-gray-600">Research project focused on detecting and mitigating hallucinations in large language models (LLMs) using evaluation metrics like BLEU, ROUGE, and perplexity.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+            <!-- Predictive Modeling for Traffic Systems -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project5.jpg" alt="Project 5" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Predictive Modeling for Traffic Systems</h3>
+                    <p class="text-gray-600">Developed a predictive model using time series forecasting techniques to predict traffic patterns and optimize city traffic systems.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+            <!-- Augmented Reality Experience for Snapchat -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="project-card p-4 bg-white rounded-lg shadow-lg">
+                    <img src="images/project6.jpg" alt="Project 6" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Augmented Reality Experience for Snapchat</h3>
+                    <p class="text-gray-600">Created an interactive augmented reality experience for Snapchat using AR development tools to enhance user engagement and brand marketing.</p>
+                    <button class="view-details text-yellow-500 hover:underline">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Certifications Section -->
-    <section id="certifications" class="py-20 bg-white">
+    <section id="certifications" class="py-20 bg-gray-100">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Certifications & Fellowships</h2>
+            <h2 class="text-4xl font-bold mb-8">Certifications</h2>
             <div class="flex flex-wrap justify-center -mx-6">
-                <!-- Certification 1 -->
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                     <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
                         <h3 class="text-xl font-semibold mb-4">AWS Certified Cloud Practitioner</h3>
@@ -79,7 +146,6 @@
                         <img src="images/aws_cert.png" alt="AWS Certification" class="mt-4" width="200" height="200">
                     </div>
                 </div>
-                <!-- Certification 2 -->
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                     <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
                         <h3 class="text-xl font-semibold mb-4">Database Management Essentials</h3>
@@ -92,10 +158,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
+    <section id="contact" class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-8">Contact Me</h2>
-            <p class="text-lg text-gray-700 mb-6">Feel free to reach out for any inquiries or collaborations.</p>
+            <p class="text-lg mb-6">Feel free to reach out for any inquiries or collaborations.</p>
             <a href="mailto:anithac1@umbc.edu" class="text-yellow-500 hover:underline">Send Email</a>
         </div>
     </section>
@@ -106,15 +172,6 @@
             <p>&copy; 2025 Anitha Chunduri. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Modal for Project Details -->
-    <div id="project-modal" class="modal fixed inset-0 hidden bg-gray-800 bg-opacity-50 flex items-center justify-center">
-        <div class="modal-content bg-white rounded-lg p-8">
-            <h3 id="modal-title" class="text-2xl font-bold mb-4">Project Details</h3>
-            <p id="modal-description" class="text-lg text-gray-700 mb-8"></p>
-            <button class="close-modal text-yellow-500 hover:underline">Close</button>
-        </div>
-    </div>
 
     <script src="scripts.js"></script>
 </body>
