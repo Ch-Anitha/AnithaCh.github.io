@@ -1,0 +1,56 @@
+/* Tailwind utilities override */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#home {
+    background-image: url('images/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-content {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal .close-modal {
+    margin-top: 20px;
+    background-color: #ffdd57;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
